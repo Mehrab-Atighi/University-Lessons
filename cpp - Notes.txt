@@ -1,0 +1,583 @@
+1-for making a intger number we have : 
+
+#include <stdio.h>
+int main ()
+{
+	int x = 4 ;
+	int y = 9 ;
+
+	int z = x + y ;
+}
+
+#############
+
+2-for printing a intiger number w have:
+
+printf("%d" , z);
+
+#############
+
+3- for four mathematics we have:
++ - * / 
+% باقی مانده
+
+
+#############
+
+4- for printing a intigernumber output in next line we have:
+
+printf("%d\n" , z);
+
+#############
+
+5-float number and double number size in our Pc
+
+printf("%ld\n . sizeof(int)) ;
+printf("%ld\n . sizeof(float)) ;
+printf("%ld\n . sizeof(double)) ;
+
+#############
+
+6-carefull about derive and two int number 
+note : 4 / 3 = int 
+
+double taghsim = 4 / 3.0 ;
+printf("%f\n" , taghsim ) ;
+
+#############
+
+7- for printing more than two variable with some text we have:
+note: \t one tab distance
+printf("Area is : %f, \tCircumference is : %f\n" ,area , circumference)
+
+#############
+8- for making a output file we have:
+note= the new file will be save in directory (script address)
+
+FILE * fp = fopen("output.txt" , "w")
+
+#############
+9- for typing a text in txt file we have : 
+ 
+fprintf(fp , "%d\n" , 2);
+fprintf(fp , "Im here.\n");
+fprintf(fp , "%f\t%f" , 2.4);
+fclose(fp);
+#############
+10- for +1 or -1 we have:
+int i = 5;
+i++;
+i--;
+i*=5 is equal with i*5
+ i/=3 is equal with i/3
+ 
+#############
+11- for using for we have:
+#include <stdio.h>
+int main()
+{
+	int n  = 5;
+	for(int i = 0 ; i<n ; i++)
+	{
+		printf("%d\n" , i )
+	}
+}
+
+#############
+12- for making a function we have :
+#include <stdio.h>
+double circl_area (doubl r )
+{
+	return ( 3.14 * r * r );
+	
+}
+
+note: when our function dont have any return thing thats void function.
+
+#######################
+int main()
+{
+	double x = 3;
+	double y = 5.876;
+
+	printf("%f\n", circle_area(x));
+	printf("%f\n", circle_area(y));
+}
+
+
+######################
+13- for using if we have: (trnary operator):
+
+Condition ? TRUE : FALSE ;
+
+######################
+14- for changing type of a variable in C we have:
+
+double r = 3.14 ;
+int a  = (int)r;
+
+#####################
+15- for using if we have:
+
+int n = 5 ;
+if (n == 5 )
+{
+	printf("OK.\n") ;
+}
+
+else if (n == 8)
+{
+
+	printf("You Win.\n");
+}
+else 
+{
+	printf("NO.\n");
+}
+
+####################
+16 - for writing and & we have:
+and  = &&
+or = ||
+naghiz = !
+
+
+####################
+17 - for using while we have:
+
+int n = 10 ;
+while (n < 50 )
+{
+	printf("Hello.\n") ; 
+}
+ 
+###################
+18 - for define some thing( make a function ) we have:
+
+codes:
+#define My_name 3 
+int main ()
+{
+	printf(%d\n , My_name) ;
+}
+
+
+
+###################
+19 - for undefine a define we have:
+
+#undef My_name
+
+###################
+20 - for finding a addres of a variable in our pc we have:
+note = %p and pointer *p  and &.
+#include <stdio.h>
+int main()
+{
+	int x = 3;
+	printf("%d\n" , x );
+	printf("%p\n" , &x );
+
+	int *p = &x ;
+	printf("%p\n" , p );
+}
+
+####################
+21 - for recive a number or other things from a person we have:
+#include <stdio.h>
+
+int main ()
+{
+	int N = 0 ; 
+	printf("Please enter an integer number: ") ; 
+	scanf("%d" , &N) ;
+
+	printf("You entered %d. \n" , N ) ;
+}
+
+###################
+22 - for writing a array we have:
+note : at the first we should define a size of array
+note : C language calculate numbers from 0 to lenght of array
+#include <stdio.h>
+
+#define MY_AR_SIZE = 5
+
+int main () 
+{
+	int my_ar[MY_AR_SIZE] = {2 , 4 , -3 , 0 , 4 } ; 
+\\ or we can define a array :
+int my_ar[] = {[0] = 1 , [1] = 2 , [2] = 5};
+
+\\ for printing a array we have:
+	for ( int i = 0 ; i<MY_AR_SIZE ; i++ )
+	{
+		printf("%d\n" , my_ar[i]);
+	}
+}	
+
+###################
+23 - for find size of a variable and type of each variable we have:
+sizeof(my_ar)
+sizeof(int)
+sizeof(double)
+  
+
+#################
+24 - for writing address we have:
+int A[] = {1 , 2, ,3}
+&A[1] == A + 1 
+&A[i] == A+i
+*(&A[i]) == *(A+i) == *(i + A) = i[A]
+
+###################
+25 - for writing a charectar and print that we have:
+
+char x = 'salam' ;
+printf(" %c , %p \n" , c, &c);
+
+###################
+26 - for change the character to integer we have:
+
+for ( char c = "A" ; c <= "Z" ; c++ )
+{
+	printf("%c\t%d\n" , (int) c  , c);
+}
+
+##################
+27 - for writing an array of characters :
+note : \0 should be at the end of each character and we should not calculate that in index of array
+int main()
+{
+	char c_array[] = "hello"
+	char c_array[]  = ("h" , "e" , "l" , "l", "o" , "\0);
+	for(int i = 0 ; c_array[i] != "\0" ; i++ )
+	{
+		printf("%c\n" , c_array[i]) ;
+	}
+}
+################
+28 - for entering a character to system we have:
+note : %3s in scanf function
+int main () 
+{
+	char my_str[4];
+	printf("please enter a character " );
+	scanf("%3s" , my_str );
+p	printf("youre word is: %s." , my_str);
+
+}
+##################
+29 - for make a matrix we have:
+#define ROW (3)
+#define COL (2)
+note : a[2][3] = {};  it means that all of that are 0
+int main()
+{
+	int a[ROW][COL] = {{2,4} , {6,1} , {3,7}};
+// or we have:
+	int a[ROW][COL];
+	a[0][0] = 2;
+	a[0][1] = 4;
+,...
+
+}
+
+#################
+30 - for input a text file in C we have: 
+note: input file should be saved in our script directory(we can get addres in other places)
+
+#include <stdio.h>
+
+int main ()
+{
+	FILE *fp_input = fopen("input.txt" , "r");
+	fclose(fp_input)
+}
+###################
+31 - for make a random number between 0 , 1 we have:
+this function is in section 35 & 36
+double my_rand2()
+{
+	return (double) rand() / RAND_MAX;
+}
+#####################
+32 - FOR MAKE A 3D plot in genuplot we should use:
+splot "output.txt" with dots
+####################
+33 - for printing a array elements from 0 to end we have:
+for (int i = 0 ; i< lenght(array) ; i++)
+{
+	printf("%d " , a[i]);
+}
+######################
+34 - for printing a array elements from end to 0 we have:
+for (int i = length(array)-1 ; i >= 0  ; i--)
+{
+	printf("%d " , a[i]);
+}
+##########################
+35 - for printing a array elements with out any method we have:
+int a[len] = {1,2,3,4,}
+int s = 0;
+for (int i = 0 ; i< lenght(array) ; i++)
+{
+	printf("%d " , a[(i+s) % length(array)]);
+}
+note that: we can use these for 33 and 34.
+#################################
+36 - for writing a structure of data we have:
+#include <stdio.h>
+#include <math.h>
+
+struc name
+{
+	double x;
+	double y;
+};
+int main()
+{
+	struct Name a;
+	a.x = 4;
+	a.y = 2;
+	printf("%f , %f \n" , a.x , a.y);
+####################################
+37 - for times two vectors and print a vector and scaller times of a number and sum of two vector we have:
+#include <stdio.h>
+#include <math.h>
+
+typedef struct Vector2d
+{
+	double x;
+	double y;
+} vector2d;
+// for printing a vector 
+void print_vector2d (vector2d v)
+{
+	printf("(%f , %f)\n" , v.x , v.y);
+}
+
+// for scalar times number and a vector
+vector2d scalar_product2d (double r , vector2d v)
+{
+	return (vector2d) {r*v.x , r*v.y}
+}
+
+// for sum of two vector
+vector2d sum2d (vector2d v1 , vector2d v2)
+{
+	return (vector2d) {v1.x + v2.x , v1.y + v1.y};
+}
+
+// for times two vector we have
+double dot_product2d (vector2d v1 , vector2d v2)
+{
+	return (v1.x * v2.x) + (v1.y * v2.y)
+}
+
+//for calculating length of a vector2d we have
+double len_vector2d (vector2d v)
+{
+	return sqrt((v.x * v.x) + (v.y * v.y))	
+}
+int main()
+{
+	Vector2d a = {3 , 4};
+	double r = 10;
+	vector2d b = scalar_product2d(r , a);
+	print_v	ector2d(b);
+
+	vector2d c = sum2d(a , b);
+	print_vector2d(c);
+	printf("%f\n" , dot_product2d(a,b));
+	printf("%f\n" , len_vector2d (a));
+
+}
+
+############################
+38 - for make a unit vector2d we have:
+#include <stdio.h>
+#include <math.h>
+
+#define EPSILON (1E-5)
+
+typedef struct
+ double x; double y; } vector2d;
+
+void print_vector2d (vector2d v)
+{ printf("(%g , %g) \n , v.x , v.y ); }
+
+double len_vector2d (vector2d v)
+{
+	return sqrt((v.x * v.x) + (v.y * v.y));
+}
+
+vector2d unit_vector2d ( vector2d v)
+{
+// for chek the v value == 0.
+	
+	if (fpclassify(v.x) == FP_ZERO && fpclassify(v.y) == FP_ZERO)
+	{ return (vector2d) {0.0 , 0.0); }
+	double len = len_vector2d(v);
+	double xx = v.x / len;
+	double yy = v.y / len;
+	if( fpclassify(xx) == FP_INFINITE || fpclassify(xx) == FP_NAN)
+	&& ( fpclassify(xx) == FP_INFINITE || fpclassify(xx) == FP_NAN))
+	{return (vector2d) {0.0 , 0.0}; }
+
+	return (vector2d) {xx, yy };
+}
+
+
+int main()
+{
+	vector2d a = {.x = 3.0 , .y = 4.0};
+	vector2d a_unit = unit_vector2d (a);
+	print_vector2d(a_unit);
+	printf("%g\n" , len_vector2d(a_unit));
+	
+}
+###################################
+39 - for chek the macro  of x we have:
+int main()
+{
+	double x = 0.01;
+	if(fpclassify(x) == FP_NORMAL)
+	{
+		printf("%g is a normal double. \n", x);}
+
+	}
+}
+
+################################
+40 - برای پیاده سازی اینکه نقطه سوم درکدام سمت از یک پاره خط علامتدار(با دونقطه اول به دوم) میباشد یا روی آن هست؟
+#include <stdio.h>
+
+#define COLINEAR (0);
+#define CLOCKWISE (1);
+#deifine COUNTERCLOCkWISE (-1);
+typedef struct {int x; int y;} point2d;
+
+int flag (point2d p1, point2d p2, point2d p3)
+{
+	int P = ((p2.x - p1.x) * (p3.y - p1.y)) - ((p2.y - p1.y) * (p3.x - p1.x))
+	if( P == 0)
+	{
+		print("colinear.\n");
+		return COLINEAR;
+	}
+	if( P > 0)
+	{
+		print("left.\n");
+		return CLOCKWISE;
+	}
+	if( P > 0)
+	{
+		print("right.\n");
+		return COUNTERCLOCKWISE;
+	}
+}
+
+int main()
+{
+	point2d A = {6,6};
+	point2d B = {4,4};
+	point2d C = {2,2};
+	point2d D = {7,1};
+	flag(A , B , C);
+}
+
+##########################
+41 - تعمیم ارایه ها به استراکت هایی که ما خودمان تعریف میکنیم و تعدادی نقاط دوبعدی (زوج مرتب) را بخوانیم
+
+#include <stdio.h>
+typedef struct {int x; int y;} point2d;
+
+void print_point2d (point2d p)
+{ printf("(%d , %d )\n" , p.x , p.y );}
+
+
+
+int main()
+{
+
+	FILE *in = fopen("input.txt" , "r");
+	int n = 0;
+	fscanf (in , "%d", &n);
+	point2d a[n];
+	for (int i = 0; i < n ; i++)
+	{
+		fscanf(in , "%d %d", &a[i].x , &a[i].y);
+		print_point2d(a[i]);
+	}
+	// if we want to find a numbers that have minimum xwe have:
+	
+	int index = 0;
+	for (int i = 0; i < n ; i++)
+	{
+		if (a[i].x < a[index])
+		{
+			index = i
+		}
+	printf("%d\n" , index);
+	print_point2d(a[index]);
+	}
+	fclose(in);
+}
+
+#############################
+42 - چگونه تشخیص بدهیم یک نقطه در کجای یک مثلث وجود داشته باشد؟(درون یا بیرون یا روی)
+#include <stdio.h>
+#include <stdlib.h>
+#define COLINEAR (1);
+#define CLOCKWISE (10);
+#deifine COUNTERCLOCkWISE (-10);
+
+#define POINT_ON_TRIANGLE (0)
+#define POINT_OUT_TRIANGLE(1)
+#define POINT_IN_TRIANGLE(-1)
+
+
+typedef struct {int x; int y;} point2d;
+typedef struct { point2d p1, point2d p2, point2d p3} triangle;
+int flag (point2d p1, point2d p2, point2d p3;)
+{
+	int P = ((p2.x - p1.x) * (p3.y - p1.y)) - ((p2.y - p1.y) * (p3.x - p1.x))
+	if( P == 0)
+	{return COLINEAR;}
+	else if( P > 0)
+	{return CLOCKWISE;}
+	else{return COUNTERCLOCKWISE;}
+}
+
+int point_triangle (triangle t , point2d p)
+{
+	int a = flag(t.p1,t.p2,p) +flag(t.p2,t.p3,p) + flag(t.p3,t.p1,p);
+	if((a%CLOCKWISE) != 0) {return printf("on.\n"); POINT_ON_TRIANGLE;}
+	else if (abs(a) == 3 * CLOCKWISE ) { return printf("in.\n"); POINT_IN_TRIANGLE;}
+	else { return printf("out.\n"); POINT_OUT_TRIANGLE;}
+}
+
+
+int main()
+{
+	point2d a = {0,0};
+	point2d b = {4,4};
+	point2d c = {8,2};
+	point2d d = {4,2};
+	point2d e = {7,-1};
+	point2d f = {14 , 4};
+	point2d g = {3,2};
+	
+	triangle T = {a , b, c};
+	
+	point_triangle(T , d);
+	point_triangle(T , e);
+	point_triangle(T , a);
+	point_triangle(T , f);
+	point_triangle(T , g);
+
+}
+
+##################################
+43 - 
